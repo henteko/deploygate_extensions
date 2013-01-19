@@ -2,7 +2,7 @@
     "name": "deploygate",
         "version": "0.0.1",
         "manifest_version": 2,
-        "description": "deploygate",
+        "description": "deploygateのNewの確認が出来ます",
         "permissions": [
             "https://deploygate.com/*",
             "alarms",
