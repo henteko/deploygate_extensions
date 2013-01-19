@@ -1,0 +1,1 @@
+deploygate.comのNewアクションを取得出来ます

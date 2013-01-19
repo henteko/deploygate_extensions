@@ -1,0 +1,27 @@
+{
+    "name": "deploygate",
+        "version": "0.0.1",
+        "manifest_version": 2,
+        "description": "deploygate",
+        "permissions": [
+            "https://deploygate.com/*",
+            "alarms",
+            "tabs",
+            "storage"
+         ],
+         "background": {
+             "scripts": ["jquery.min.js", "background.js"],
+             "persistent": false
+         },
+         "content_scripts": [
+         {
+             "matches": ["https://deploygate.com/*"],
+             "js": ["jquery.min.js", "main.js"],
+             "run_at": "document_start"
+         }
+    ],
+        "browser_action": {
+            "default_icon": "icon.png",
+            "default_title": "deploygate"
+        }
+}
