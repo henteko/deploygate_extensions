@@ -1,6 +1,7 @@
 (function(undefined) {
     chrome.browserAction.onClicked.addListener(function(tab) {
         chrome.tabs.create({url: "http://deploygate.com/"});
+        chrome.browserAction.setBadgeText({text:""})
     });
 
 
